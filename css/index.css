@@ -1,0 +1,319 @@
+body {
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: -apple-system, Helvetica, sans-serif;
+    color: #666;
+    line-height: 1.5;
+    /* background-color: #ccc; */
+    height: 2000px;
+}
+
+/* 点击高亮我们需要清除清除  设置为transparent 完成透明 */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 在移动端浏览器默认的外观在ios上加上这个属性才能给按钮和输入框自定义样式 */
+input {
+    -webkit-appearance: none;
+}
+
+/* 禁用长按页面时弹出菜单 */
+img,
+a {
+    -webkit-touch-callout: none;
+}
+
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+.app {
+    height: 45px;
+}
+
+.app ul li {
+    float: left;
+    height: 45px;
+    background-color: #333333;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+}
+
+.app ul li:nth-child(1) {
+    width: 8%;
+}
+
+.app ul li:nth-child(1) img {
+    width: 10px;
+    vertical-align: middle;
+}
+
+.app ul li:nth-child(2) {
+    width: 10%;
+}
+
+.app ul li:nth-child(2) img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.app ul li:nth-child(3) {
+    width: 57%;
+    font-size: 14px;
+
+}
+
+.app ul li:nth-child(4) {
+    width: 25%;
+    background-color: #F63515;
+    font-size: 14px;
+}
+
+/* 搜索 */
+.search-wrap {
+    position: fixed;
+    height: 44px;
+    width: 100%;
+    overflow: hidden;
+    min-width: 320px;
+    max-width: 640px;
+}
+
+.search-btn {
+    position: absolute;
+    width: 40px;
+    height: 44px;
+}
+
+.search-btn::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 18px;
+    background: url(../images/s-btn.png)no-repeat;
+    background-size: 20px 18px;
+    margin: 14px 0 0 15px;
+}
+
+.search-login {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    width: 40px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+}
+
+.search {
+    position: relative;
+    height: 30px;
+    background-color: #fff;
+    margin: 0 50px;
+    margin-top: 7px;
+    border-radius: 15px;
+}
+
+.jd-icon {
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    left: 13px;
+    background: url(../images/jd.png) no-repeat;
+    background-size: 20px 15px;
+}
+
+.jd-icon::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+}
+
+.search .sou {
+    position: absolute;
+    top: 8px;
+    left: 50px;
+    width: 18px;
+    height: 15px;
+    background: url(../images/jd-sprites.png) no-repeat -81px 0;
+    background-size: 200px auto;
+}
+
+.value {
+    position: absolute;
+    top: 0px;
+    left: 72px;
+    width: 182px;
+    height: 30px;
+    color: #ccc;
+    border: 0;
+    font-size: 12px;
+}
+
+.slider img {
+    width: 100%;
+}
+
+/* 品牌日 */
+.brand div {
+    float: left;
+    width: 33.3%;
+
+}
+
+.brand div img {
+    width: 100%;
+}
+
+.brand {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+/* nav */
+nav {
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    width: 20%;
+    text-align: center;
+
+}
+
+nav a img {
+    width: 40px;
+    margin: 10px 0;
+}
+
+nav a span {
+    display: block;
+
+}
+
+.qc {
+    overflow: hidden;
+}
+
+/* news */
+.news {
+
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.news a img {
+    width: 100%;
+}
+
+.news a {
+    float: left;
+}
+
+.news a:nth-child(1) {
+    width: 50%;
+}
+
+.news a:nth-child(2) {
+    width: 25%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.news a:nth-child(3) {
+    width: 25%;
+}
+
+.neirong {
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+
+
+}
+
+.tupian img {
+    width: 100%;
+}
+
+.name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #434343;
+    font-size: 14px;
+}
+
+.name img {
+    width: 44px;
+    height: 14px;
+    vertical-align: text-bottom;
+    margin: 0 10px;
+}
+
+.zuidijia {
+    width: 94px;
+    height: 21px;
+    font-size: 12px;
+    color: #ff2078;
+    margin-top: 5px;
+    margin-left: 5px;
+    line-height: 21px;
+    background-color: rgb(255, 239, 245);
+    text-align: center;
+}
+
+.zuidijia img {
+    width: 12px;
+    height: 12px;
+    vertical-align: text-top;
+    margin-right: 5px;
+
+}
+
+.row {
+    width: 150px;
+    height: 30px;
+    font-size: 13px;
+    color: #FF4142;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.row em {
+    font-size: 20px;
+    font-style: normal;
+    color: #FF4142;
+}
+
+.row img {
+    width: 24px;
+    height: 14px;
+    vertical-align: text-bottom;
+}
